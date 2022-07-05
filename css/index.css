@@ -1,0 +1,330 @@
+* {
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .4);
+	background-color: #fff
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background-color: #fff
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fa7747;
+}
+
+body {
+	background-image: url(../img/bgimg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+/* 导航栏 */
+.navbox .nav {
+	background: transparent;
+	border-radius: 6px;
+	transform: scaleY(0);
+	opacity: 0;
+	transition: all .4s;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbox:hover .nav {
+	hight: 100%;
+	background: transparent;
+	transform: scaleY(1);
+	opacity: 1;
+	.
+}
+
+/* 音乐插件 */
+#aplayer {
+	z-index: 20000000;
+}
+
+/* 导航栏按钮特效 */
+button {
+	border: 0;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 15px;
+	color: white;
+	outline: none;
+	position: relative;
+}
+
+button:before {
+	content: '';
+	display: block;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
+	background-size: 210% 100%;
+	background-position: right bottom;
+	height: 100%;
+	100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border-radius: 15px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.green {
+	background-image: linear-gradient(to right, #25aae1, #40e495);
+	box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.purple {
+	background-image: linear-gradient(to right, #6253e1, #852D91);
+	box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.purple:hover:before {
+	background-position: left bottom;
+}
+
+.green:hover:before {
+	background-position: left bottom;
+}
+
+/* 头像框 */
+.avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: url(../img/avatar.jpg);
+	background-size: 100% 100%;
+	margin: 10px auto;
+	transition: all 375ms;
+
+}
+
+/* 头像框hover旋转 */
+.avatar:hover {
+	transform: rotate(360deg)
+		/* 90deg是顺时针转 */
+		/* transform:rotate(-90deg) */
+		/* -90deg是顺时针转 */
+}
+
+/* 打字机 */
+.desc {
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.72em;
+}
+
+.desc h1 {
+	margin: 0;
+	padding: 0;
+}
+
+/* 联系方式 */
+.contact {
+	display: flex;
+	justify-content: center;
+
+}
+
+.contact li {
+	width: 20px;
+	height: 20px;
+	list-style: none;
+	background: #fff;
+	border-radius: 50%;
+	padding: 8px;
+	margin: 10px;
+	transition: 500ms;
+}
+
+.contact img {
+	width: 20px;
+	height: 20px;
+}
+
+.contact li:hover {
+	transform: scale(1.2);
+}
+
+/* 内容 */
+#content {
+	/* background-color: rgba(249, 249, 249, 0.7); */
+	box-shadow: 0px 0px 20px rgba(40, 40, 40, 0.1);
+	border-radius: 8px;
+	width: 90%;
+	margin: 50px auto;
+}
+
+/* 个人介绍 */
+.introduce {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	/* justify-content: space-around; */
+margin-bottom: 150px;
+}
+
+.introduce-box {
+	display: flex;
+	justify-content: flex-start;
+
+	margin: 20px auto;
+	background-color: #ffffff;
+	border-radius: 8px;
+	width: 1000px;
+	height: 252px;
+}
+
+.box-t {
+	/* display: inline-block; */
+	width: 57%;
+	height: 100%;
+	padding: 60px 60px;
+}
+
+.box-i {
+	width: 44%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 0;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	/* box-shadow: 3px 3px 5px #F5FFFA; */
+	transition: 500ms;
+	padding: 0;
+	display: block;
+
+}
+
+.img:hover {
+	transform: scale(1.1);
+
+}
+
+hr {
+	border: none;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .01),
+			rgba(0, 0, 0, .4), rgba(0, 0, 0, .01))
+}
+
+.box-t-title {
+	font-size: 1.72em;
+	color: #1f2d3d;
+	transition: 500ms;
+	text-decoration: none;
+}
+
+.Copywriting {
+	color: #4c4948;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-indent: 2em;
+}
+
+.box-t-title:hover {
+	color: #49b1f5;
+}
+
+/* 返回顶部 */
+.huojianbox {
+	opacity: 0;
+	transition: 1s;
+	background: #fff;
+	border-radius: 100%;
+	box-shadow: 1px 1px 12px #ccc;
+	/* border: 1px solid #000; */
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+.huojian {
+	padding: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.huojian img {
+	width: 100%;
+	height: 100%;
+}
+
+.study {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 200px;
+}
+
+.frontend {
+	width: auto;
+	height: 200px;
+}
+
+.frontend img {
+	border-radius: 8px;
+}
+
+.entertainment {
+
+	/* margin: 0 auto; */
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 200px;
+}
+
+.music {
+	width: 300px;
+	/* height: 500px; */
+	background: #ffffff;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.entertainment-img{
+	width: 100%;
+	height: 60%;
+	transition: 500ms;
+}
+.entertainment-img:hover {
+	transform: scale(1.1);
+
+}
+/* 个人经历 */
+.experience-box {
+	display: flex;
+	justify-content: flex-start;
+
+	margin: 20px auto;
+	background-color: #ffffff;
+	border-radius: 8px;
+	width: 1000px;
+	height: 252px;
+}
+/* 页尾 */
+.realfoolebox{
+    padding-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    bottom: 0;
+}

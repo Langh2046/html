@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>世豪个人导航</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+		<script src="js/jq3.4.1.js"></script>
+
+		<script>
+			//小火箭显示效果
+			$(document).ready(function() {
+				// console.log("test")
+				// 分割线--------------------------------
+				$(window).scroll(function() {
+					var topp = $(window).scrollTop();
+					if (topp > 15) {
+						// console.log(topp);
+						$(".huojianbox").css("opacity", '1')
+						// console.log("topp"+topp)
+					} else {
+						$(".huojianbox").css("opacity", '0')
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+
+		<div id="top"></div>
+
+		<!-- 导航栏 -->
+		<div class="navbox" style="height: 100%;">
+			<div class="nav" style="height: 20px;">
+				<div id="frozen-btn">
+					<a href="#introduce"><button class="green">介绍</button></a>
+					<a href="#study"><button class="purple">学习</button></a>
+					<a href="#entertainment"><button class="green">娱乐</button></a>
+					<a href="#experience"><button class="purple">经历</button></a>
+					<a href="./page/link.html"><button class="green">友链</button></a>
+					<a href="http://langh2046.tk/"><button class="purple">博客</button></a>
+				</div>
+			</div>
+		</div>
+		<!-- 头像框 -->
+		<div class="avatar"></div>
+		<!-- 打字机 -->
+		<div class="desc">
+			<h1>Langh2046</h1>
+			<span id="Typed" style="color: #ffffff;"></span>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js"></script>
+		<script language=javascript>
+			var typed = new Typed("#Typed", {
+				strings: ["不如不见面.", "今日事，今日毕.", "记录自己的进步."],
+				startDelay: 200,
+				backDelay: 2000,
+				typeSpeed: 300,
+				loop: true,
+				backSpeed: 20
+			})
+		</script>
+		<!-- 联系方式 -->
+		<div class="contentcontact">
+			<ul class="contact">
+				<li><a href="https://music.163.com/#/user/home?id=481071679" target="_blank"><img src="./img/163.png"
+							alt="网易云音乐" title="网易云音乐"></a></li>
+				<li><a href="tencent://message/?uin=2216075163" target="_blank"><img src="./img/qq.png" alt="qq"
+							title="qq"></a></li>
+				<li><a href="https://space.bilibili.com/418898551" target="_blank"><img src="./img/bilibili.png"
+							alt="bilibili" title="bilibili"></a></li>
+				<li><a href="mailto:2216075163@qq.com" target="_blank"><img src="./img/mail.png" alt="邮箱"></a></li>
+				<li><a href="https://github.com/Langh2046" target="_blank"><img src="./img/github.png" alt="github"></a>
+				</li>
+			</ul>
+		</div>
+		<!-- 内容 -->
+		<div id="content">
+			<!-- 个人介绍 -->
+
+			<h2 style="text-align: center;" id="introduce">📝个人介绍</h2>
+
+			<div class="introduce">
+				<div class="introduce-box">
+					<div class="box-t"><a class="box-t-title" href="./page/xinxi.html">Langh2046个人信息</a>
+						<hr>
+						<p class="Copywriting">
+							我是一名大学生，今年19岁，就读于广东建设职业技术学院，软件技术专业。自己也很开心能到这个专业，没有被调剂到。本人于初中时期对计算机就感兴趣，在15岁的时候成功搭建个人导航页，也玩过kali蓝屏攻击，aide锁机研究，易语言，iapp等一些乱七八糟的东西，一度沉迷于黑客技术，但正当我准备向师父讨教的时候，师父跟我说，别学那些没有用的，要学就学一些对以后有用处的技术。那个时候我对网页比较感兴趣，便陆陆续续的自学，但由于学业的问题，断断续续的，直到现在技术也没有很大的提高，所以大学给我这个专业，我觉得是上天给我的机会，我的前端之路由此开始。
+						</p>
+					</div>
+					
+					<div class="box-i"><a href="./page/xinxi.html"><img src="img/img1.jpg" alt="" class="img"></a></div>
+				</div>
+				
+				<div class="introduce-box">
+					<div class="box-i"><a href="./page/youhuashuo.html"><img src="img/img2.jpg" alt="" class="img"></a></div>
+					<div class="box-t"><a class="box-t-title" href="./page/youhuashuo.html">Langh2046有话说</a>
+						<p class="Copywriting">作为一名软件技术专业的学生，相信你们一部分人的职业规划跟计算机也有关联，在此，我有一些个人的见解。一.就业分前端，后端，全栈。首先要清楚自己的定位，自己合适什么，再往哪些方面发展。二.针对性学习，不要局限于学校开的课程，就业时所需要的知识量远远超过现在我们在校学到的东西。三.不要光看不敲，看懂了不实践是没有效果的，代码是一行一行积累下来的，敲多了自然会熟练。
+						</p>
+					</div>
+				</div>
+				
+				<div class="introduce-box">
+					<div class="box-t"><a class="box-t-title" href="./page/jineng.html">Langh2046技能</a>
+						<hr>
+						<p class="Copywriting">
+							本人了解熟悉以下技能
+						</p>
+					</div>
+					<div class="box-i"><a href="./page/jineng.html"><img src="img/img3.jpg" alt="" class="img"></a></div>
+				</div>
+			</div>
+			<hr>
+			
+			
+			<!-- 学习导向 -->
+			<h2 style="text-align: center;" id="study">💻学习导向</h2>
+			<div class="study">
+				<div class="frontend"><a href="./page/web.html"><img src="img/img4.jpg" alt="" class="img"></a>
+					<h3 style="font-size: 29px; text-align: center; margin: 5px; color: #ffffff;">📑web前端</h3>
+				</div>
+				<div class="frontend"><a href="./page/webdajian.html"><img src="img/img5.jpg" alt="" class="img"></a>
+					<h3 style="font-size: 29px; text-align: center; margin: 5px; color: #ffffff;"">📶网站搭建</h3></div>
+	<div class=" frontend"><a href="./page/zhandian.html"><img src="img/img6.jpg" alt="" class="img"></a>
+						<h3 style="font-size: 29px; text-align: center; margin: 5px; color: #ffffff;"">🌐实用站点</h3></div>
+</div>	
+<hr>
+<!-- 娱乐地带 -->
+				<h2 style=" text-align: center;" id="entertainment">️🕹️娱乐地带</h2>
+							<div class=" entertainment">
+								<div class="music">
+									<h3 style="text-align: center;">🎧我的歌单</h3>
+									<p class="Copywriting">
+										听一下我喜欢的歌吧。
+									</p>
+									<a href="./page/music.html"><img src="img/img7.jpg" alt="" class="entertainment-img"></a>
+								</div>
+								<div class="music">
+									<h3 style="text-align: center;">🎬电影推荐</h3>
+									<p class="Copywriting">
+										推荐你看以下电影。
+									</p>
+									<a href="./page/movie.html"><img src="img/img8.jpg" alt="" class="entertainment-img"></a>
+								</div>
+								<div class="music">
+									<h3 style="text-align: center;">🎮游戏推荐</h3>
+									<p class="Copywriting">
+										这些游戏有机会你一定要试试看
+									</p>
+									<a href="./page/game.html"><img src="img/img9.jpg" alt="" class="entertainment-img"></a>
+								</div>
+
+
+							</div>
+							<hr>
+
+<!-- 个人经历 -->
+
+			<h2 style="text-align: center;" id="experience">🛌个人经历</h2>
+
+			<div class="experience">
+				<div class="experience-box">
+					<div class="box-t"><a class="box-t-title" href="./page/jianzhan.html">第一次建站</a>
+						<hr>
+						<p class="Copywriting">
+							2017.11.26
+						</p>
+					</div>
+					
+					<div class="box-i"><a href="./page/jianzhan.html"><img src="img/img10.jpg" alt="" class="img"></a></div>
+				</div>
+				
+				<div class="experience-box">
+					<div class="box-i"><a href="./page/jianji.html"><img src="img/img11.jpg" alt="" class="img"></a></div>
+					<div class="box-t"><a class="box-t-title" href="./page/jianji.html">第一次剪辑</a>
+						<p class="Copywriting">2019.4.29
+						</p>
+					</div>
+				</div>
+				
+				<div class="experience-box">
+					<div class="box-t"><a class="box-t-title" href="./page/cansai.html">第一次参赛</a>
+						<hr>
+						<p class="Copywriting">
+							2022.6.8 叩丁狼小程序比赛小组赛三等奖
+						</p>
+					</div>
+					<div class="box-i"><a href="./page/cansai.html"><img src="img/img12.jpg" alt="" class="img"></a></div>
+				</div>
+			</div>
+			<div class="experience">			
+				<div class="experience-box">
+					<div class="box-i"><a href="./page/daima.html"><img src="img/img13.jpg" alt="" class="img"></a></div>
+					<div class="box-t"><a class="box-t-title" href="./page/daima.html">第一次写程序代码</a>
+						<p class="Copywriting">2017.3.5
+						</p>
+					</div>
+				</div>
+				
+				<div class="experience-box">
+					<div class="box-t"><a class="box-t-title" href="./page/jilupian.html">策划校园纪录片</a>
+						<hr>
+						<p class="Copywriting">
+							2021.7.28
+						</p>
+					</div>
+					<div class="box-i"><a href="./page/jilupian.html"><img src="img/img14.jpg" alt="" class="img"></a></div>
+				</div>
+			</div>
+			<hr>
+			<div class="realfoolebox">
+			    <div class="copy">Copyright © by langh2046 All Rights Reserved.</div>
+			    <div class="zuoze">langh2046</div>
+			</div>
+
+							<!-- 返回顶部 -->
+							<div class=" huojianbox">
+								<div class="huojian">
+									<a href="#top"><img src="./img/huojian.png" alt=""></a>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<!-- aplayer -->
+							<div id="aplayer" class="aplayer" data-order="list" data-id="5162605350"
+								data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"
+								data-volume="0.8"></div>
+							<!-- end_aplayer -->
+							<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+							<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+							<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+							<!-- index -->
+							<script src="js/index.js"></script>
+
+	</body>
+	<script>
+	    $(function () {
+	
+	        //锚点的过渡效果
+	        $(document).on('click', 'a[href^="#"]', function () {
+	            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	                var $target = $(this.hash);
+	                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');//获取到点击对应id的元素
+	                if ($target.length) {
+	                    var targetOffset = $target.offset().top;
+	                    $('html,body').animate({   //滑动效果主要用到jq的animate函数
+	                        scrollTop: targetOffset
+	                    }, 500);
+	                    return false;
+	                }
+	            }
+	        });                   
+	    })
+	</script>
+
+
+</html>

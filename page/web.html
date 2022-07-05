@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>web前端</title>
+		<meta name="language" content="zh-CN">
+		<script src="../js/jq3.4.1.js"></script>
+		<style type="text/css">
+			* {
+				padding: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+			}
+
+			::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .4);
+				background-color: #fff
+			}
+
+			::-webkit-scrollbar {
+				width: 5px;
+				height: 5px;
+				background-color: #fff
+			}
+
+			::-webkit-scrollbar-thumb {
+				background-color: #fa7747;
+			}
+
+			body {
+				background-image: url(../img/bgimg.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+
+			/*-----内容区域------*/
+			#content {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 80%;
+				height: 0%;
+				background-color: rgba(249, 249, 249, 0.7);
+				border-radius: 8px;
+				box-shadow: 0px 0px 20px rgba(40, 40, 40, 0.1);
+				z-index: 7;
+				overflow: hidden;
+				transition: 1s;
+				display: flex;
+			}
+
+			.left {
+				width: 70%;
+				height: 100%;
+				overflow: auto;
+			}
+
+			#etext {
+				text-indent: 2em;
+			}
+
+			/* 小型个人框 */
+			.introduce-box {
+				width: 30%;
+				height: 100%;
+				background: #fff;
+				border-radius: 8px;
+			}
+
+			.avatar {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background: url(../img/avatar.jpg);
+				background-size: 100% 100%;
+				transition: all 375ms;
+				margin: 30px auto;
+			}
+
+			/* 头像框hover旋转 */
+			.avatar:hover {
+				transform: rotate(360deg)
+					/* 90deg是顺时针转 */
+					/* transform:rotate(-90deg) */
+					/* -90deg是顺时针转 */
+			}
+
+			.desc {
+				text-align: center;
+				color: #000;
+				font-weight: 700;
+				font-size: 1em;
+			}
+
+			.index-button {
+				display: block;
+				width: 50%;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 30px auto;
+				background: #389df0;
+				color: #fff;
+				border-radius: 8px;
+				text-decoration: none;
+			}
+
+			/* 联系方式 */
+			.contact {
+				display: flex;
+				justify-content: center;
+
+			}
+
+			.contact li {
+				width: 10px;
+				height: 10px;
+				list-style: none;
+				background: #fff;
+				border-radius: 50%;
+				padding: 8px;
+				margin: 10px;
+				transition: 500ms;
+			}
+
+			.contact img {
+				width: 20px;
+				height: 20px;
+			}
+
+			.contact li:hover {
+				transform: scale(1.2);
+			}
+
+			.img {
+				width: auto;
+				height: 100px;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.jn-box {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.jn-s-box {
+				width: 150px;
+				height: 150px;
+			}
+			h1{
+				margin: 0;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="content">
+			<div class="left">
+				<h1>路线图</h1>
+				<p>HTML+CSS-->移动web->JavaScript基础-->Web APIs->数据交互&异步编程-->Node.js-->Vue2+Vue3-->React核心技术-->微信小程序</p>
+				<h1>第一阶段：前端基础入门</h1>
+				<p>前端学习的第一个阶段我们的目标应该是搭建PC端和移动端静态页面。让我们从小白升级成为网页的化妆师。这里需要掌握的知识点为HTML+CSS相关内容。
+
+					认识网页 / HTML标签大全 / 表格 / 列表
+					<br>
+					CSS入门笔记 / Css样式表 / emmet语法 / CSS的复合选择器 / 显示模式 /
+					<br>
+					CSS背景 / CSS三大特性 / 盒子模型 / 圆角边框、盒子阴影、文字阴影
+					<br>
+					浮动知识点汇总 / PS切图 / CSS属性书写顺序（重点） / CSS练手之学成在线页面制作
+					<br>
+					CSS定位的4种分类 / 学成在线模块添加 / HTML+CSS之定位（position）的应用
+					<br>
+					案例：淘宝轮播图 / 元素的显示与隐藏 / 土豆网鼠标经过显示遮罩 /
+					<br>
+					【重点】CSS之精灵图 / 字体图标 / 用户界面样式源码 / vertical-align 属性应用 /
+					<br>
+					溢出的文字省略号显示 / 常见布局技巧+案例 / CSS新增选择器 / 盒子模型和其他新特性
+					<br>
+					以上内容学习结束后，可以用一个项目来检验自己的学习成果。同时也可以巩固在前端入门阶段的知识点是否牢固掌握。
+					<br>
+					移动web相关内容也需要学习。承接HTML+CSS, 使用字体图标、平面转换、动画等，丰富网页效果和呈现方式；后完成移动端和多端适配效果。
+				</p>
+				<h1>第二阶段：技术进阶</h1>
+				<p>让网页“动”起来，带你学会前端工程师核心语言——JavaScript，实现网页数据交互与动画效果，并实现与后端数据的联通。
+					<br>
+					了解JavaScript语言的基本概念，熟知语法规则，培养语言基础逻辑能力，webAPI主要是学习客户端的开发技术，能够根据需求完成视觉交互、数据处理、安全和性能等功能。JavaScript是让大家具具备面向对象的编程能力。
+					<br>
+					数据交互&异步编程-前端进阶Ajax零基础入门
+					<br>
+					如何封装自己的模板引擎和 Ajax 函数；涵盖广泛，涵盖了 Ajax、跨域、JSONP、模板引擎、节流防抖、XHR Level2 等常用技术。
+				</p>
+				<h1>第三阶段：Vue 开发</h1>
+				<p>掌握Vue.js 可以帮我们搞定前端工程师的项目。</p>
+				<h1>第四阶段：React&小程序开发</h1>
+				<p>React帮你解锁中高级前端工程师能力地图，多端项目让你满足90%+企业需求。
+					<br>
+					React 是时下最流行的前端框架之一，是很多大厂的首选前端开发框架！需要学习内容包括：React 脚手架、JSX、函数组件、类组件、受控组件、组件通讯、Context、组件生命周期、高阶组等等技术。
+					<br>
+					小程序账号注册、开发环境搭建、基础语法、路由导航、数据请求、分包、组件化等方面都是小程序开发必备的基础知识。学完基础之后，利用 uni-app
+					<br>
+					技术实现微信小程序的开发，可以做到一次开发多端部署。项目拥有首页、搜索页、商品列表页、商品详情页、购物车、登录支付等主要功能。涵盖了分包、vuex、组件化开发等核心技术点的使用。</p>
+				<h1>总结</h1>
+				<p>前端入门相对来说会简单一些，而且容易在学习中找到成就感。但是不管是入门还是代码调试、优化，这些只有通过自己实践得来。希望你们看到这份黑马程序员整理的新版前端学习路线，都可以边学边练，学有所成，实践出真知识。</p>
+
+			</div>
+
+			<div class="introduce-box">
+				<div class="avatar"></div>
+				<!-- 打字机 -->
+				<div class="desc">
+					<h1>Langh2046</h1>
+					<span id="Typed" style="color: #000;"></span>
+				</div>
+				<a href="../index.html" class="index-button">返回首页</a>
+				<!-- 联系方式 -->
+				<div class="contentcontact">
+					<ul class="contact">
+						<li><a href="https://music.163.com/#/user/home?id=481071679" target="_blank"><img
+									src="../img/163.png" alt="网易云音乐" title="网易云音乐"></a></li>
+						<li><a href="tencent://message/?uin=2216075163" target="_blank"><img src="../img/qq.png"
+									alt="qq" title="qq"></a></li>
+						<li><a href="https://space.bilibili.com/418898551" target="_blank"><img
+									src="../img/bilibili.png" alt="bilibili" title="bilibili"></a></li>
+						<li><a href="mailto:2216075163@qq.com" target="_blank"><img src="../img/mail.png" alt="邮箱"></a>
+						</li>
+						<li><a href="https://github.com/Langh2046" target="_blank"><img src="../img/github.png"
+									alt="github"></a>
+						</li>
+					</ul>
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js"></script>
+				<script language=javascript>
+					var typed = new Typed("#Typed", {
+						strings: ["不如不见面.", "今日事，今日毕.", "记录自己的进步."],
+						startDelay: 200,
+						backDelay: 2000,
+						typeSpeed: 300,
+						loop: true,
+						backSpeed: 20
+					})
+				</script>
+			</div>
+		</div>
+	</body>
+
+
+	<script type="text/javascript">
+		// 进入页面就执行
+		window.onload = function() {
+			//展开效果			
+			$("#content").animate({
+				height: '80%'
+			});
+		}
+		//打字机
+		let divTyping = document.getElementById('etext')
+		let i = 0,
+			timer = 0,
+			str = '本人了解熟悉以下技能'
+
+		function typing() {
+			if (i <= str.length) {
+				divTyping.innerHTML = str.slice(0, i++) + '_'
+				timer = setTimeout(typing, 120)
+			} else {
+				divTyping.innerHTML = str //结束打字,移除 _ 光标
+				clearTimeout(timer)
+			}
+		}
+		typing();
+	</script>
+</html>
